@@ -5,8 +5,8 @@ function makeRequest(word) {
   rqst.onreadystatechange = iChanged;
   rqst.open('GET',link,true);
   rqst.setRequestHeader("Accept", "application/json");
-  rqst.setRequestHeader("app_id", "<YOUR_ID>");
-  rqst.setRequestHeader("app_key", "<YOUR_KEY>");
+  rqst.setRequestHeader("app_id", "92b2de92");
+  rqst.setRequestHeader("app_key", "d9b54e314f4ce7e1feeb22f4c5d08d52");
   rqst.send();
 
   function iChanged()
@@ -33,8 +33,8 @@ function makeRequest(word) {
           req.onreadystatechange = ohhYEAH;
           req.open('GET',requrl,true);
           req.setRequestHeader("Accept", "application/json");
-          req.setRequestHeader("app_id", "YOUR_ID");
-          req.setRequestHeader("app_key", "YOUR_KEY");
+          req.setRequestHeader("app_id", "92b2de92");
+          req.setRequestHeader("app_key", "d9b54e314f4ce7e1feeb22f4c5d08d52");
           req.send();
 
           function ohhYEAH()
