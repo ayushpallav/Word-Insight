@@ -4,6 +4,7 @@ Double click on any text on the current webpage, its meaning will be displayed i
 History will be maintained in the extension, popup.html for reference.
 
 Setting up the extension:
+
     Get all the files in a single folder, then : 
         1. Go to chrome://extensions on your browser. 
         2. Turn on the developer mode. 
