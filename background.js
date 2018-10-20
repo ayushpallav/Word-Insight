@@ -21,7 +21,8 @@ function makeRequest(word) {
 
           chrome.extension.onConnect.addListener(function(port) {
               port.onMessage.addListener(function(msg) {
-              port.postMessage("<b style='color:#191970;'>" + word + "</b> :<br> " + responseBody.results[0].lexicalEntries[0].entries[0].senses[0].definitions[0]);
+              port.postMessage("<b style='color:#191970;'>" + word + "</b> :<br> " + 
+                               responseBody.results[0].lexicalEntries[0].entries[0].senses[0].definitions[0]);
             });
           });
 
@@ -67,7 +68,8 @@ function makeRequest(word) {
 
                         chrome.extension.onConnect.addListener(function(port) {
                             port.onMessage.addListener(function(msg) {
-                            port.postMessage("<b style='color:#191970;'>" + key + "</b> : <br>" + responseBody.results[0].lexicalEntries[0].entries[0].senses[0].definitions[0]);
+                            port.postMessage("<b style='color:#191970;'>" + key + "</b> : <br>" + 
+                                             responseBody.results[0].lexicalEntries[0].entries[0].senses[0].definitions[0]);
                           });
                         });
 
